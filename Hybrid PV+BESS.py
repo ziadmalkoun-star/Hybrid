@@ -193,7 +193,7 @@ def optimize_dispatch_dp(inputs: SimulationInputs) -> Dict[str, np.ndarray]:
 
     # Discrétisation du budget de cycles.
     # Plus il y a de pas, plus c'est précis, mais plus c'est coûteux.
-    cycle_steps = 101
+    cycle_steps = 21
     cycle_grid = np.linspace(0.0, max_total_discharge, cycle_steps)
 
     def nearest_soc_index(value: float) -> int:
